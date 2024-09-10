@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Interacción y Multimedia en HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+
+        h3 {
+            color: #333;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        details {
+            margin-bottom: 20px;
+        }
+
+        dialog {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        dialog button {
+            background-color: #f44336;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        dialog button:hover {
+            background-color: #d32f2f;
+        }
+
+        input[type="text"], input[type="email"] {
+            width: 300px;
+            padding: 5px;
+            margin-bottom: 15px;
+        }
+
+        audio, video {
+            margin-top: 10px;
+            display: block;
+        }
+
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h3>Interacción y Multimedia en HTML</h3>
+
+    <p><a href="#">La etiqueta <code>&lt;a&gt;</code> se utiliza para crear enlaces, como los que se encuentran al final de la página.</a></p>
+
+    <button type="button" onclick="alert(' Hola:)')">Haz clic aquí</button>
+
+    <details>
+        <summary>Más información</summary>
+        <p>Este es un contenido adicional que se muestra cuando se expande.</p>
+    </details>
+
+    <p><code>&lt;summary&gt;</code> define un resumen o título para el contenido dentro de <code>&lt;details&gt;</code>.</p>
+
+    <dialog open style="width: 500px; height: 300px;">
+        <p>Este es un cuadro de diálogo que está abierto. Puedes cerrarlo usando el botón de abajo.</p>
+        <button onclick="this.closest('dialog').close()">Cerrar</button>
+    </dialog>
+
+    <hr>
+
+    <h4>Formulario</h4>
+    <input type="text" name="name" placeholder="Escribe lo que quieras...">
+    <p></p>
+    <label for="email">Correo electrónico:</label>
+    <input type="email" id="email" name="email">
+
+    <hr>
+
+    <h4>Audio y Video</h4>
+    <p>Reproductor de audio:</p>
+    <audio controls>
+        <source src="50 Cent - In Da Club (Official Music Video).mp3" type="audio/mpeg">
+        Tu navegador no soporta la etiqueta de audio.
+    </audio>
+
+    <p>Reproductor de video:</p>
+    <video width="640" height="360" controls>
+        <source src="video.mp4" type="video/mp4">
+        Tu navegador no soporta la etiqueta de video.
+    </video>
+
+    <hr>
+
+    <h4>Enlaces</h4>
+    <p><a href="pagina2.html">Ir a la segunda página</a></p>
+    <p><a href="index.html">Ir a la primera página</a></p>
+</body>
+</html>

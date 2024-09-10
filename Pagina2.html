@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formularios y Tablas en HTML</title>
+    <style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+input[type="text"], input[type="email"], select, textarea {
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+a {
+    color: #4CAF50;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Formularios y Tablas en HTML</h1>
+    
+
+    <h2>Formularios</h2>
+    <form action="/submit-form" method="post">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" placeholder="Escribe tu nombre" required>
+        
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" placeholder="Escribe tu correo" required>
+        
+        <label for="gender">Género:</label>
+        <select id="gender" name="gender" required>
+            <option value="">Selecciona tu género</option>
+            <option value="male">Masculino</option>
+            <option value="female">Femenino</option>
+            <option value="other">Otro</option>
+        </select>
+        
+        <label for="message">Mensaje:</label>
+        <textarea id="message" name="message" rows="4" placeholder="Escribe tu mensaje"></textarea>
+        
+        <input type="submit" value="Enviar">
+    </form>
+
+    <hr>
+
+    <h2>Tablas</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>Ciudad</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Juan</td>
+                <td>25</td>
+                <td>Madrid</td>
+            </tr>
+            <tr>
+                <td>Ana</td>
+                <td>30</td>
+                <td>Barcelona</td>
+            </tr>
+            <tr>
+                <td>Pedro</td>
+                <td>35</td>
+                <td>Valencia</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <h2>Enlaces</h2>
+    <p><a href="index.html">Volver a la primera página</a></p>
+    <p><a href="pagina3.html">Tercera página prueba</a></p>
+
+</body>
+</html>
